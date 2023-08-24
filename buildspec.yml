@@ -8,6 +8,7 @@ phases:
   pre_build:
     commands:
       - |
+        env | sort;
         ${AST_CLI_EXE} scan create \
         --project-name ${CX_PROJECT_NAME} \
         --file-source . \
