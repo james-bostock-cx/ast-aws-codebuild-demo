@@ -12,4 +12,4 @@ phases:
         ${AST_CLI_EXE} scan create \
         --project-name ${CX_PROJECT_NAME} \
         --file-source . \
-        --branch ${CODEBUILD_SOURCE_VERSION-main}
+        --branch ${CODEBUILD_WEBHOOK_HEAD_REF##*/}
