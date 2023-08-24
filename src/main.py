@@ -1,5 +1,6 @@
 import os
 import sys
 
-for arg in sys.argv[1:]:
-  os.unlink(arg)
+if __name__ == '__main__':
+    for arg in sys.argv[1:]:
+        os.unlink(arg)
